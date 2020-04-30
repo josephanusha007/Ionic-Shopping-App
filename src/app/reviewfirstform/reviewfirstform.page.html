@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Review Primary Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+      <ion-label>First Name:{{primaryDetails.firstname}} </ion-label>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Last Name: {{primaryDetails.lastname}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email: {{primaryDetails.email}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mobile Number: {{primaryDetails.mobile}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Aadhar Number: {{primaryDetails.aadhar}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Gender: {{primaryDetails.gender}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Date Of Birth: {{primaryDetails.dob | date: 'dd/mm/yyyy'}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Address: {{primaryDetails.address}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>City: {{primaryDetails.city}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Country: {{primaryDetails.country}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Pincode: {{primaryDetails.pincode}}</ion-label>
+    </ion-item>
+  
+    <ion-button type="submit" expand="full" (click)="submit()" color="primary">Submit Primary Details</ion-button>
+  
+</ion-content>
