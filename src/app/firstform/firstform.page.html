@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Primary Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="firstForm" (ngSubmit)="submitPrimaryDetails(firstForm)">
+    <ion-item>
+      <ion-label position="floating">First Name</ion-label>
+      <ion-input type="text" formControlName="firstname"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Last Name</ion-label>
+      <ion-input type="text" formControlName="lastname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Mobile Number</ion-label>
+      <ion-input type="number" formControlName="mobile"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Aadhar Number</ion-label>
+      <ion-input type="number" formControlName="aadhar"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Gender</ion-label>
+      <ion-input type="gender" formControlName="gender"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Date Of Birth</ion-label>
+      <ion-datetime displayFormat="MM DD YYYY" placeholder="Select Date" formControlName="dob"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Address</ion-label>
+      <ion-input type="text" formControlName="address"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">City</ion-label>
+      <ion-input type="text" formControlName="city"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Country</ion-label>
+      <ion-input type="text" formControlName="country"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Pincode</ion-label>
+      <ion-input type="number" formControlName="pincode"></ion-input>
+    </ion-item>
+  
+    <ion-button type="submit" [disabled]="!firstForm.valid" expand="full" color="primary">Review Primary Details</ion-button>
+  </form>
+  
+</ion-content>
